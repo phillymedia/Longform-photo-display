@@ -106,6 +106,7 @@ $(document).ready(function() {
         var intro = document.getElementById('gIntro').value;
         var title = document.getElementById('gTitle').value;
 
+        var output = '';
 
         output += '<div alignment="true" class="allContent"><div alignment="true" class="headerIntroNoImage"><div alignment="true" class="headerSectionNoImage"><h1 class="overlayText">' + title + '</h1><div alignment="true" class="headDisplay"><div alignment="true" class="byline">' + author + ' / Staff Writer, <a href="mailto:' + email + '">' + email + '</a><div alignment="true" class="custom-social-share">&nbsp;</div></div><div alignment="true" class="dateline">' + dateline + '</div></div></div></div><div alignment="true" class="container"><div alignment="true" class="row"><div alignment="true" class="col-md-8 col col-md-offset-2"><div alignment="true" class="subHead">' + subhead + '</div></div></div><div alignment="true" class="row imagedisplay">';
 
