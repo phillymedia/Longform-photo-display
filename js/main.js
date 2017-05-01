@@ -106,7 +106,7 @@ $(document).ready(function() {
         var intro = document.getElementById('gIntro').value;
         var title = document.getElementById('gTitle').value;
 
-        var output = '<link alignment="true" rel="stylesheet" type="text/css" href="http://media.philly.com/storage/inquirer/css/longform-photo-display.css"/><link rel="stylesheet" href="http://media.philly.com/storage/inquirer/script/custom-bootstrap-styles/css/bootstrap.css">';
+        // var output = '<link alignment="true" rel="stylesheet" type="text/css" href="http://media.philly.com/storage/inquirer/css/longform-photo-display.css"/><link rel="stylesheet" href="http://media.philly.com/storage/inquirer/script/custom-bootstrap-styles/css/bootstrap.css">';
 
         output += '<div alignment="true" class="allContent"><div alignment="true" class="headerIntroNoImage"><div alignment="true" class="headerSectionNoImage"><h1 class="overlayText">' + title + '</h1><div alignment="true" class="headDisplay"><div alignment="true" class="byline">' + author + ' / Staff Writer, <a href="mailto:' + email + '">' + email + '</a><div alignment="true" class="custom-social-share">&nbsp;</div></div><div alignment="true" class="dateline">' + dateline + '</div></div></div></div><div alignment="true" class="container"><div alignment="true" class="row"><div alignment="true" class="col-md-8 col col-md-offset-2"><div alignment="true" class="subHead">' + subhead + '</div></div></div><div alignment="true" class="row imagedisplay">';
 
