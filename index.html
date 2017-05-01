@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Longform photo display
+  </title>
+  <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7722894/765348/css/fonts.css" /> -->
+</head>
+
+<body>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <div id="wrapper">
+  <div id="heading"><h1>PMN: Longform photo display</h1>
+    <p class="headingText">Use this tool to create photo pages like <a href="http://www.philly.com/philly/sports/Mike_Schmidt_Phillies_greatest_third_baseman.html">this</a>. <br><em>For help or to report bugs, contact <a href="mailto:spotts@phillynews.com?Subject=Gallery%20Tool" target="_top">Garland Potts</a>.</em></p></div>
+  <div class="step" id="step-1">
+    <div class="getInfo">
+      <div class="instruc">Fill out all the fields below:</div>
+      <form class="infoform">
+        Headline:
+        <input type="text" class="inputform" name="title" id="gTitle" placeholder="This is the headline">
+        <br> Subhead:
+        <input type="text" class="inputform" name="subhead" id="gSubhead" placeholder="This is a subhead">
+        <br> Author:
+        <input type="text" class="inputform" name="author" id="gAuthor" placeholder="Firstname Lastname">
+        <br> Email:
+        <input type="text" class="inputform" name="email" id="gEmail" placeholder="testemail@philly.com">
+        <br> Pub date:
+        <input type="text" class="inputform" name="dateline" id="gDateline" placeholder="Monday, Jan. 3, 2017">
+        <br>Intro text:
+        <input type="text" class="inputform" name="intro" id="gIntro" placeholder="This is some intro text that will appear right above the gallery."><br>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="step" id="step-4">
+    <div class="instruc">Copy and paste image information from spreadsheet:</div>
+    <p>Set-up the list by either downloading the <a target="_blank" href="https://docs.google.com/spreadsheets/d/1jMXBuF-HLPZZdPumCYJMfcUuW0ObKyuviHHd9kX25AQ/edit?usp=sharing">template CSV file here</a> or by copying and pasting the table row below into an Excel sheet. <strong>DO NOT CHANGE THE HEADER.</strong>
+      <table class="table table-bordered table-hover table-condensed gridtable">
+                      <tbody><tr>
+                          <td title="Field #1">image_url</td>
+                          <td title="Field #2">image_credit</td>
+                          <td title="Field #3">image_caption</td>
+                          <td title="Field #4">vertical</td>
+                      </tr>
+                      </tbody>
+                  </table></p>
+
+    <p>You can leave caption or credit fields blank if you do not need to include that information. Only include "yes" in the VERTICAL field if the image is a vertical image. Otherwise you can leave this field blank.</p>
+    <p>Once finished, select all (CTRL+A on a PC or Command+A on Mac) and copy (CTRL+C or Command+C) the CSV contents and paste data in the field below.</p>
+    <textarea id="csv" class="textarea"></textarea>
+  </div>
+
+  <div class="step" id="step-5">
+    <button id="convert" class="button">Convert to HTML</button>
+    <textarea id="json-features" class="textarea hiddn json">
+    <div alignment='true' class='allContent'>
+      </div>;
+  </textarea>
+
+  </div>
+  <div class="step" id="step-6">
+    <p>Find the Page Miscellaneous called <strong>Longform photo display test</strong>, Clickability ID 420909563, and duplicate the page by checking the box next to the page and clicking copy at the top.</p>
+    <p class="">Copy the code in the form above and paste it into the Body: HTML Source Editor of the Page Miscellaneous (click on the button that says HTML). You can leave the Inline Javascript and CSS field alone.</p>
+    <button id="preview" class="button">Preview photo display</button>
+    <div id="preview-container"></div>
+    <button id="redo" class="button">Start over</button>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
