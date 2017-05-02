@@ -144,6 +144,8 @@ $(document).ready(function() {
 
         $("#json-features").show();
         $("#step-6").show();
+        $("#redo").show();
+
       };
 
       functionOne().done(functionFeatures());
@@ -151,12 +153,15 @@ $(document).ready(function() {
       $('#preview').click(function() {
         $("#preview-container").show();
         var preview = $(".json:visible").val();
-        $("#preview-container").append(preview);
+        $("#preview-container").html(preview);
         $("#json-features").show();
 
       });
       $('#redo').click(function() {
-        location.reload();
+        // location.reload();
+        $("#csv").val('');
+        $("#json-features").val('');
+        $(".json").val('');
       });
     }
 
